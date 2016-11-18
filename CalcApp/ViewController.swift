@@ -15,54 +15,37 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var ansLabel: UILabel!
     
     @IBAction func pushAddButton(_ sender: AnyObject) {
-        if let s1 = firstTextField.text {
-            if let s2 = secondTextField.text {
-                if let n1 = Int(s1){
-                    if let n2 = Int(s2) {
-                        let ans = n1 + n2
-                        ansLabel.text = String(ans)
-                    }
-                }
-                
+        if let s1 = firstTextField.text ,let s2 = secondTextField.text {
+            if let n1 = Int(s1) ,let n2 = Int(s2) {
+                let ans = n1 + n2
+                ansLabel.text = String(ans)
             }
         }
     }
     
     @IBAction func pushSubButton(_ sender: AnyObject) {
-        if let s1 = firstTextField.text {
-            if let s2 = secondTextField.text {
-                if let n1 = Int(s1){
-                    if let n2 = Int(s2) {
+        if let s1 = firstTextField.text ,let s2 = secondTextField.text {
+            if let n1 = Int(s1) ,let n2 = Int(s2) {
                         let ans = n1 - n2
                         ansLabel.text = String(ans)
-                    }
-                }
             }
         }
     }
     
     @IBAction func pushMultiButton(_ sender: AnyObject) {
-        if let s1 = firstTextField.text {
-            if let s2 = secondTextField.text {
-                if let n1 = Int(s1){
-                    if let n2 = Int(s2) {
+        if let s1 = firstTextField.text ,let s2 = secondTextField.text {
+            if let n1 = Int(s1) ,let n2 = Int(s2) {
                         let ans = n1 * n2
                         ansLabel.text = String(ans)
-                    }
-                }
             }
         }
     }
     
     @IBAction func pushDivButton(_ sender: AnyObject) {
-        if let s1 = firstTextField.text {
-            if let s2 = secondTextField.text {
-                if let n1 = Int(s1){
-                    if let n2 = Int(s2) {
+        if let s1 = firstTextField.text ,let s2 = secondTextField.text {
+            if let n1 = Int(s1) ,let n2 = Int(s2) {
                         let ans = n1 / n2
                         ansLabel.text = String(ans)
-                    }
-                }
             }
         }
     }
